@@ -23,7 +23,7 @@ public class ExternalApiTests {
     @Test
     void routeBasePriceReturned() {
         when()
-            .get("http://localhost:" + port + GET_ROUTE_BASE_PRICE, "Vilnius", "Lithuania")
+            .get("http://localhost:" + port + GET_ROUTE_BASE_PRICE, "Riga", "Vilnius")
         .then()
             .log().all()
             .body("amount", is(11))

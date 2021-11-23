@@ -28,7 +28,7 @@
 
 ### **Response**
 
-Returns a list of data as described in **TaxRateResponse** class. Tax rate type is not required to complete the assignment, but it seems appropriate to identify it.
+Returns a list of data as described in **TaxRateResponse** class. Tax rate type is not required to complete the assignment, but it seems appropriate to identify it. Value is hardcoded to be 11.
 ```
 [
     {
@@ -41,8 +41,8 @@ Returns a list of data as described in **TaxRateResponse** class. Tax rate type 
 
 ### **Params**
 
-- source, route starting point, only Vilnius supported.
-- destination, route end location, only Lithuania supported.
+- source, route starting point, only Riga supported.
+- destination, route end location, only Vilnius supported.
 - Both parameters are used in **Route** class and are mandatory.
 ### **Response**
 

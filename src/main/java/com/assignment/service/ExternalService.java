@@ -16,7 +16,7 @@ import java.util.Optional;
 public class ExternalService {
     private static final BigDecimal VAT_RATE = BigDecimal.valueOf(11);
     private static final Map<Route, BigDecimal> ROUTE_BASE_PRICES = Map.of(
-        new Route("Vilnius", "Lithuania"), new BigDecimal(11)
+        new Route("Riga", "Vilnius"), new BigDecimal(11)
     );
 
     public List<TaxRateResponse> getTaxRates() {

@@ -29,7 +29,7 @@ import static org.hamcrest.core.AllOf.allOf;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class TicketDraftPriceServiceTests {
+public class TicketDraftPriceApiTests {
     private final static String POST_TICKET_DRAFT_PRICE = "/api/v1/ticket";
     private final static String CONTENT_TYPE = "application/vnd.api+json";
 
@@ -148,9 +148,9 @@ public class TicketDraftPriceServiceTests {
         given()
             .contentType(CONTENT_TYPE)
             .body(body)
-            .when()
+        .when()
             .post("http://localhost:" + port + POST_TICKET_DRAFT_PRICE)
-            .then()
+        .then()
             .log().all()
             .body(
                 "status", is("BAD_REQUEST"),
